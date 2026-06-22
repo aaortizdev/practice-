@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prueba</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="stylesheet/styles.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
   </head>
 
   <body>
@@ -14,9 +14,7 @@
       <img 
         id ="photo"
         src = "img/Foto.png"
-        alt = "Foto de Ariel Ortiz"
-        width="100" 
-        heigth="100">
+        alt = "Foto de Ariel Ortiz">
 
       <h1>Ariel Alejandro Ortiz Baque</h1>
     </header>
@@ -102,29 +100,20 @@
           </select>
 
           <!--3. selección única-->
-          <p><strong>Como prefieres que te contacte?</strong></p>
-          <div class="opcion">
-            <input type="radio" id="telefono" name="contacto" value="telefono">
-            <label for="telefono">Teléfono</label>
-          </div>
-          <div class="opcion">
-            <input type="radio" id="correo" name="contacto" value="correo">
+          <fieldset>
+            <legend><strong>Como quieres que te contacte?</strong></legend>
             <label for="correo">Correo</label>
-          </div>
+            <input type="radio" id="correo" name="contacto" value="Correo">
+            <label for="telefono">Telefono</label>
+            <input type="radio" id="telefono" name="contacto" value="telefono">
 
-          <p><strong>Áreas de interés: </strong></p>
+          </fieldset>
+          <legend><strong>Areas de interes: </strong></legend>
+          <label for="movil">Desarrollo Movil</label>
+          <input type="checkbox" id="movil" name="area" value="movil">
+          <label for="web">Desarrollo Web</label>
+          <input type="checkbox" id="web" name="area" value="web">
 
-          <div class="checkbox">
-            <input type="checkbox" id="web" name="areas" value="web">
-            <label for="web">Desarrollo Web</label> 
-
-          </div>
-
-          <div class="checkbox"> 
-            <input type="checkbox" id="movil" name="areas" value="movil">
-            <label for="movil">Desarrollo Móvil</label> 
-            
-          </div>
 
           <!--5. Área de texto-->
           <label for="mensaje">Mensaje: </label>

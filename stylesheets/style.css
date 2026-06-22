@@ -1,0 +1,80 @@
+* {
+
+    /* Familia de fuentes */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    background-color: #F9ECE5;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.2 rem;
+}
+
+#photo {
+    width: 8vw;
+    height: auto;
+    border-radius: 5%;
+}
+
+.subtitle {
+    color: rgb(151 156 165 / 0.89);
+    text-transform: uppercase;
+}
+
+
+footer p {
+    text-align: right;
+    font-style: italic;
+}
+
+
+nav > ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction :row;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.5% 1.5%;
+    flex-wrap: wrap;
+}
+
+
+section {
+    border: 1.5pt solid #cedddd;
+    margin: 4px 2px 8px 2px; 
+    padding: 1.5% 0.8%;
+    margin-bottom: 1.2rem;
+    border-radius: 8px; 
+}
+
+section > form {
+    display:grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
