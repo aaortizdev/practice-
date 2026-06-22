@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet/styles.css">
+  </head>
+
+  <body>
+    <header>
+      <img 
+        id ="photo"
+        src = "img/Foto.png"
+        alt = "Foto de Ariel Ortiz"
+        width="100" 
+        heigth="100">
+
+      <h1>Ariel Alejandro Ortiz Baque</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#resumen">Resumen</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#educacion">Educación</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="resumen">
+        <h2 class="subtitle">Resumen</h2>
+        <p>Soy estudiante de Ingeniería en computación en la <a href="https://www.espol.edu.ec/es">ESPOL</a></p>
+      
+        <iframe
+        width = "500"
+        heigth = "350"
+        src = "https://www.youtube.com/embed/6s-1MXVNXqs"
+        title = "Vídeo de Ariel Ortiz"
+        allowfullscreen>
+        </iframe>
+
+      </section>
+
+      <section id="habilidades">
+        <h2 class="subtitle">Habilidades</h2>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+
+      <section id="experiencia">
+        <h2 class="subtitle">Experiencia</h2>
+      </section>
+
+      <section id="educacion">
+        <h2 class = "subtitle">Educación</h2>
+        <ol> 
+          <li>Bachiller - Colegio Montepiedra (2017-2023)</li>
+          <li>Estudiante - ESPOL (2023 - actualidad)</li>
+        </ol>
+      </section>
+
+      <section id = "proyectos">
+        <h2 class="subtitle">Proyectos</h2>
+        <table>
+          <tr>
+            <th>Proyecto</th>
+            <th>Tecnologías</th>
+            <th>Año</th>
+          </tr>
+          <tr>
+            <td>Sistema de inventario de GYM</td>
+            <td>SQL, MYSQL workbench 8.0, git</td>
+            <td>2025</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="contacto">
+        <h2 class="subtitle">Contacto</h2>
+        
+        <form action="#" method="post">
+          <!--1. Texto en una línea-->
+          <label for="nombre">Nombre: </label>
+          <input type="text" name="nombre" placeholder="Tu nombre completo">
+
+          <!--2. Lista despegable-->
+          <label for="motivo">Motivo de contacto: </label>
+          <select id="motivo" name=""motivo>
+            <option value="">Selecciona una opción</option>
+            <option value="trabajo">Trabajo</option>
+            <option value="asesoria">Asesoría</option>
+            <option value="otro">Otro</option>
+          </select>
+
+          <!--3. selección única-->
+          <p><strong>Como prefieres que te contacte?</strong></p>
+          <div class="opcion">
+            <input type="radio" id="telefono" name="contacto" value="telefono">
+            <label for="telefono">Teléfono</label>
+          </div>
+          <div class="opcion">
+            <input type="radio" id="correo" name="contacto" value="correo">
+            <label for="correo">Correo</label>
+          </div>
+
+          <p><strong>Áreas de interés: </strong></p>
+
+          <div class="checkbox">
+            <input type="checkbox" id="web" name="areas" value="web">
+            <label for="web">Desarrollo Web</label> 
+
+          </div>
+
+          <div class="checkbox"> 
+            <input type="checkbox" id="movil" name="areas" value="movil">
+            <label for="movil">Desarrollo Móvil</label> 
+            
+          </div>
+
+          <!--5. Área de texto-->
+          <label for="mensaje">Mensaje: </label>
+          <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Ariel Ortiz - 2026 (Prueba)</p>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/ariel-ortiz-9a2879298/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>  
+        <li>
+          <a href="https://github.com/aaortizdev" target="_blank">
+            <i class="fa-brands fa-github"></i> 
+          </a>
+        </li> 
+        <li>
+          <a href="https://www.instagram/arielortiz_20" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+
+      </ul>
+      
+      
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d31895.879923246277!2d-79.9309824!3d-2.1594112!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1782102224049!5m2!1ses!2sec" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      
+    </footer>
+
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+
+</html>
